@@ -25,10 +25,12 @@
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Leo Messi
+                            <h5 id="p1-name"
+                                class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">L. Messi
                             </h5>
                         </a>
-                        <button class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
+                        <button id="p1-button"
+                            class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
                     </div>
                 </div>
                 <div
@@ -38,10 +40,12 @@
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Neymar Jr.
+                            <h5 id="p2-name"
+                                class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Neymar Jr.
                             </h5>
                         </a>
-                        <button class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
+                        <button id="p2-button"
+                            class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
                     </div>
                 </div>
                 <div
@@ -51,17 +55,19 @@
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">k. Mbappe
+                            <h5 id="p3-name"
+                                class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">K. Mbappe
                             </h5>
                         </a>
-                        <button class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
+                        <button id="p3-button"
+                            class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
                     </div>
                 </div>
                 <div class="bg-slate-200 rounded">
-                    <div>
+                    <div class="p-6">
                         <h2 class="text-center text-4xl py-2">Select 5
                         </h2>
-                        <ol></ol>
+                        <ol class="list-decimal" id="players-list"></ol>
                     </div>
                 </div>
                 <div
@@ -71,10 +77,12 @@
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">V. Machado
+                            <h5 id="p4-name"
+                                class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">V. Machado
                             </h5>
                         </a>
-                        <button class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
+                        <button id="p4-button"
+                            class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
                     </div>
                 </div>
                 <div
@@ -84,10 +92,12 @@
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">S. Ramos
+                            <h5 id="p5-name"
+                                class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">S. Ramos
                             </h5>
                         </a>
-                        <button class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
+                        <button id="p5-button"
+                            class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
                     </div>
                 </div>
                 <div
@@ -97,28 +107,34 @@
                     </a>
                     <div class="p-5">
                         <a href="#">
-                            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">R. Sanches
+                            <h5 id="p6-name"
+                                class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">R. Sanches
                             </h5>
                         </a>
-                        <button class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
+                        <button id="p6-button"
+                            class="bg-blue-700 m-2 px-4 py-1 text-white hover:bg-blue-800 rounded">Select</button>
                     </div>
                 </div>
-                <div class="bg-slate-200 rounded">
-                    <div>
+                <div class="bg-slate-200 rounded mx-auto">
+                    <div class="p-1">
                         <h2 class="text-center text-4xl py-2">Budget
                         </h2>
                         <div class="grid grid-cols-2 mx-2">
-                            <div><span>Per Player</span></div>
-                            <div class="me-2"><input type="text"></div>
+                            <div>
+                                <span>Per Player</span>
+                            </div>
+                            <div class="me-2">
+                                <input id="per-playerinput" type="text">
+                            </div>
                         </div>
-                        <button
-                            class="bg-yellow-200 hover:bg-yellow-300 px-8 font-medium rounded my-2">Calculate</button>
+                        <button class="bg-yellow-200 hover:bg-yellow-300 px-8 font-medium rounded my-2"
+                            id="calculate-button">Calculate</button>
                         <div class="grid grid-cols-2">
                             <div>
                                 <p>PlayerExpenses</p>
                             </div>
                             <div class="px-6">
-                                <p>$00</p>
+                                <p>$<span id="player-Expense">00</span>00</p>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 mx-2 my-2">
@@ -153,6 +169,8 @@
             </div>
         </section>
     </main>
+    <script src="js/players-data.js"></script>
+
 </body>
 
 </html>
