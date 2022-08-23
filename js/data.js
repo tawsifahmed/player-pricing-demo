@@ -115,11 +115,14 @@ document.getElementById('calculate-button').addEventListener('click', function (
     const perPlayerInputString = perPlayerInputField.value;
     const perPlayerInput = parseInt(perPlayerInputString);
 
+
     const perPlayerCalc = perPlayerInput * count;
+
 
     const playerExpensesElement = document.getElementById('player-expense');
     const previousPlayerExpenseString = playerExpensesElement.innerText;
     const previousPlayerExpense = parseInt(previousPlayerExpenseString);
+
     const currentPlayerExpense = previousPlayerExpense + perPlayerCalc;
     playerExpensesElement.innerText = currentPlayerExpense;
     currentPlayerExp = currentPlayerExpense;
@@ -130,11 +133,11 @@ document.getElementById('calc-total-button').addEventListener('click', function 
     const managerField = document.getElementById('manager-field');
     const managerInputString = managerField.value;
     const managerInput = parseInt(managerInputString);
-    console.log(managerInput);
+
     const coachField = document.getElementById('coach-field');
     const coachInputString = coachField.value;
     const coachInput = parseInt(coachInputString);
-    console.log(coachInput);
+
     const totalCalc = parseInt(currentPlayerExp) + managerInput + coachInput;
 
     const inTotalElement = document.getElementById('total');
