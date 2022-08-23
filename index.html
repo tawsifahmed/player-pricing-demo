@@ -124,7 +124,7 @@
                                 <span>Per Player</span>
                             </div>
                             <div class="me-2">
-                                <input id="per-playerinput" type="text">
+                                <input id="per-playerInputField" type="text">
                             </div>
                         </div>
                         <button class="bg-yellow-200 hover:bg-yellow-300 px-8 font-medium rounded my-2"
@@ -134,7 +134,7 @@
                                 <p>PlayerExpenses</p>
                             </div>
                             <div class="px-6">
-                                <p>$<span id="player-Expense">00</span>00</p>
+                                <p>$<span id="player-expense">00</span></p>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 mx-2 my-2">
@@ -142,7 +142,7 @@
                                 <p>Manager</p>
                             </div>
                             <div>
-                                <input type="text">
+                                <input id="manager-field" type="text">
                             </div>
                         </div>
                         <div class="grid grid-cols-2 mx-2">
@@ -150,17 +150,18 @@
                                 <p>Coach</p>
                             </div>
                             <div>
-                                <input type="text">
+                                <input id="coach-field" type="text">
                             </div>
                         </div>
-                        <button class="bg-yellow-200 hover:bg-yellow-300 px-8 font-medium rounded my-2">Calculate
+                        <button id="calc-total-button"
+                            class="bg-yellow-200 hover:bg-yellow-300 px-8 font-medium rounded my-2">Calculate
                             Total</button>
                         <div class="grid grid-cols-2 mx-2">
                             <div>
                                 <p>Total</p>
                             </div>
                             <div>
-                                <p>$00</p>
+                                <p>$<span id="total">00</span></p>
                             </div>
                         </div>
                     </div>
@@ -169,8 +170,12 @@
             </div>
         </section>
     </main>
-    <script src="js/players-data.js"></script>
+    <script src="js/data.js"></script>
 
+    <footer class="p-8 bg-zinc-900">
+        <p class="text-center text-white"> Copyright @ 2022 All Rights Reserved.
+        </p>
+    </footer>
 </body>
 
 </html>
