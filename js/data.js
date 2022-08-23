@@ -1,17 +1,4 @@
-// function getPlayersNamesById(playerNameId) {
-//     const playerName = document.getElementById(playerNameId);
-//     playerName = playerNameElement.innerText;
-
-
-//     const playersListElement = document.getElementById('players-list');
-//     const li = document.createElement('li');
-//     li.innerText = playerName;
-//     playersListElement.appendChild(li);
-//     // return li;
-// }
-
 let count = 0;
-
 
 document.getElementById('p1-button').addEventListener('click', function () {
 
